@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://127.0.0.1:5000/process" method="POST">
+        <h1>Welcome to the Chatbot Helpdesk</h1>
+        <label for="dropdown1">Select Health Conditions</label>
+        <select id="dropdown1" name="dropdown1">
+            <option value="Poor">Poor</option>
+            <option value="Healthy">Healthy</option>
+            <option value="Neutral">Neutral</option>
+        </select>
+
+        <label for="dropdown1">Select Severity Level</label>
+        <select id="dropdown2" name="dropdown2">
+            <option value="Mild">Mild</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Sever">Sever</option>
+        </select>
+
+        <label for="message">Send Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
