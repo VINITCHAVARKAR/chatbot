@@ -9,8 +9,8 @@ HealthBot (Python,Flask,HTML,CSS,ChatGPT API)
 4. The implemented chatbot allows users to have conversations and utilizes the ChatGPT API to generate responses based on the selected condition and severity. 
 5. Overall, the project enables an interactive chat-based interface for users to seek assistance regarding their health conditions.
 
-Installation
-clone project
-"pip install python"
-"pip install flask"
-"flask --app test.py run"
+Installation-
+1. clone project
+2. pip install python
+3. pip install flask
+4. flask --app test.py run
